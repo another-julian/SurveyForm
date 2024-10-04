@@ -1,2 +1,2 @@
 # SurveyForm
-a simple survey form example
+this is a simple survey form example
