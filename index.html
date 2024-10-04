@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Gamer Survey Form</h1>
+    <p id="description">this is a little description</p>
+    <content class="content-form">
+      <form id="survey-form">
+        <label for="name" id="name-label">Name<input id="name" name="name" placeholder="Enter your name" type="text" required /></label>
+        <label for="email" id="email-label">Email<input id="email" name="Email" placeholder="Enter your Email" type="email" required /></label>
+        <label for="number" id="number-label">How many hours a week do you spend playing video games?<input id="number" name="number" placeholder="Enter a number" type="number" min="0" max="2" /> </label>
+        <label>What device do you most frequently play on?
+          <select id="dropdown">
+            <option value="">select one</option>
+            <option value="1">Personal Computer (PC)</option>
+            <option value="2">Console (PlayStation, Xbox, etc.)</option>
+            <option value="3">Tablet</option>
+            <option value="4">Mobile phone</option>
+          </select>
+        </label>
+        <fieldset>
+          <legend>Do you prefer buying games in physical or digital format?</legend>
+          <label><input class="inline" name="radio-buttom" type="radio" value="1" checked/> Physical</label>
+          <label><input class="inline" name="radio-buttom" type="radio" value="2"/> Digital</label>
+        </fieldset>
+        <fieldset>
+          <legend>What genres of video games do you prefer?</legend>
+          <label><input class="inline" value="1" type="checkbox"/>Action/Adventure</label>
+          <label><input class="inline" value="2" type="checkbox"/>RPG (Role-playing games)</label>
+          <label><input class="inline" value="3" type="checkbox"/>Shooter (FPS/TPS)</label>
+          <label><input class="inline" value="4" type="checkbox"/>Strategy games</label>
+          <label><input class="inline" value="5" type="checkbox"/>Battle Royale</label>
+          <label><input class="inline" value="7" type="checkbox"/>Sports games</label>
+          <label><input class="inline" value="8" type="checkbox"/>Simulation</label>
+          <label><input class="inline" value="9" type="checkbox"/>RogueLike</label>
+        </fieldset>
+        <label>What do you enjoy the most about video games and why?<textarea placeholder="What I enjoy the most about video games is the ability to immerse myself in different worlds and stories..." rows="4"></textarea></label>
+        <input type="submit" id="submit" />
+      </form>
+    </content>
+  </body>
+</html>
